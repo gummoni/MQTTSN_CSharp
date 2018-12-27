@@ -27,7 +27,7 @@
         /// <param name="gateway"></param>
         /// <param name="code"></param>
         /// <returns></returns>
-        public static byte[] Parse(MQTTSNGateway gateway, ReturnCode code)
+        public static byte[] Pack(MQTTSNGateway gateway, ReturnCode code)
         {
             var length = (ushort)3;
             var context = new MQTTSNPayload(length);

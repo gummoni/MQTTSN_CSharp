@@ -56,6 +56,7 @@
     <Compile Include="Messages\ConnAck.cs" />
     <Compile Include="Messages\Connect.cs" />
     <Compile Include="Messages\Disconnect.cs" />
+    <Compile Include="Messages\ForwarderEncapsulation.cs" />
     <Compile Include="Messages\GWInfo.cs" />
     <Compile Include="Messages\PingReq.cs" />
     <Compile Include="Messages\PingResp.cs" />
