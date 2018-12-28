@@ -46,44 +46,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Messages\Advertise.cs" />
+    <Compile Include="MQTTSN\MessageFlags.cs" />
+    <Compile Include="MQTTSN\Messages\Advertise.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Messages\ConnAck.cs" />
-    <Compile Include="Messages\Connect.cs" />
-    <Compile Include="Messages\Disconnect.cs" />
-    <Compile Include="Messages\ForwarderEncapsulation.cs" />
-    <Compile Include="Messages\GWInfo.cs" />
-    <Compile Include="Messages\PingReq.cs" />
-    <Compile Include="Messages\PingResp.cs" />
-    <Compile Include="Messages\PubAck.cs" />
-    <Compile Include="Messages\PubComp.cs" />
-    <Compile Include="Messages\Publish.cs" />
-    <Compile Include="Messages\PubRec.cs" />
-    <Compile Include="Messages\PubRel.cs" />
-    <Compile Include="Messages\RegAck.cs" />
-    <Compile Include="Messages\Register.cs" />
-    <Compile Include="Messages\SubAck.cs" />
-    <Compile Include="Messages\Subscribe.cs" />
-    <Compile Include="Messages\UnSubAck.cs" />
-    <Compile Include="Messages\Unsubscribe.cs" />
-    <Compile Include="Messages\WillMsg.cs" />
-    <Compile Include="Messages\WillMsgReq.cs" />
-    <Compile Include="Messages\WillMsgResp.cs" />
-    <Compile Include="Messages\WillMsgUpd.cs" />
-    <Compile Include="Messages\WillTopic.cs" />
-    <Compile Include="Messages\WillTopicReq.cs" />
-    <Compile Include="Messages\WillTopicResp.cs" />
-    <Compile Include="Messages\WillTopicUpd.cs" />
-    <Compile Include="MQTTSNMessage.cs" />
-    <Compile Include="MQTTSNPayload.cs" />
+    <Compile Include="MQTTSN\Messages\ConnAck.cs" />
+    <Compile Include="MQTTSN\Messages\Connect.cs" />
+    <Compile Include="MQTTSN\Messages\Disconnect.cs" />
+    <Compile Include="MQTTSN\Messages\ForwarderEncapsulation.cs" />
+    <Compile Include="MQTTSN\Messages\GWInfo.cs" />
+    <Compile Include="MQTTSN\Messages\PingReq.cs" />
+    <Compile Include="MQTTSN\Messages\PingResp.cs" />
+    <Compile Include="MQTTSN\Messages\PubAck.cs" />
+    <Compile Include="MQTTSN\Messages\PubComp.cs" />
+    <Compile Include="MQTTSN\Messages\Publish.cs" />
+    <Compile Include="MQTTSN\Messages\PubRec.cs" />
+    <Compile Include="MQTTSN\Messages\PubRel.cs" />
+    <Compile Include="MQTTSN\Messages\RegAck.cs" />
+    <Compile Include="MQTTSN\Messages\Register.cs" />
+    <Compile Include="MQTTSN\Messages\SubAck.cs" />
+    <Compile Include="MQTTSN\Messages\Subscribe.cs" />
+    <Compile Include="MQTTSN\Messages\UnSubAck.cs" />
+    <Compile Include="MQTTSN\Messages\Unsubscribe.cs" />
+    <Compile Include="MQTTSN\Messages\WillMsg.cs" />
+    <Compile Include="MQTTSN\Messages\WillMsgReq.cs" />
+    <Compile Include="MQTTSN\Messages\WillMsgResp.cs" />
+    <Compile Include="MQTTSN\Messages\WillMsgUpd.cs" />
+    <Compile Include="MQTTSN\Messages\WillTopic.cs" />
+    <Compile Include="MQTTSN\Messages\WillTopicReq.cs" />
+    <Compile Include="MQTTSN\Messages\WillTopicResp.cs" />
+    <Compile Include="MQTTSN\Messages\WillTopicUpd.cs" />
+    <Compile Include="MQTTSN\Session.cs" />
+    <Compile Include="MQTTSN\Client.cs" />
+    <Compile Include="MQTTSN\Gateway.cs" />
+    <Compile Include="MQTTSN\MQTTSNMessage.cs" />
+    <Compile Include="MQTTSN\Payload.cs" />
+    <Compile Include="MQTTSN\SequenceException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Messages\SearchGW.cs" />
+    <Compile Include="MQTTSN\Messages\SearchGW.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +100,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
